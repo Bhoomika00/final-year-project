@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="C:\Users\User\PycharmProjects\pd-fy\static\dashboardStyles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="main">
+    <div style="float:right;margin-top:0px;"><a class="btn btn-danger" href="/logout" role="button">Log Out</a></div>
+  <h1>About Parkison's Disease</h1>
+
+    <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://www.parkinson.org/sites/default/files/neurons%20.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Causes of Parkison's disease</h2>
+          <p class="card_text">In Parkinson's disease, certain nerve cells (neurons) in the brain gradually break down or die. Many of the symptoms are due to a loss of neurons that produce a chemical messenger in your brain called dopamine. When dopamine levels decrease, it causes abnormal brain activity, leading to impaired movement and other symptoms of Parkinson's disease.</p>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://post.healthline.com/wp-content/uploads/2020/09/11008-Parkinsons_Disease_1200x628-facebook-1200x628.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Symptoms of Parkison's disease</h2>
+          <p class="card_text">Decreased facial expressions: You may not smile or blink as often as the disease worsens; your face lacks expression.
+Speech/vocal changes: Speech may be quick, become slurred or be soft in tone. You may hesitate before speaking. The pitch of your voice may become unchanged (monotone).
+Handwriting changes: You handwriting may become smaller and more difficult to read.</p>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://acibademinternational.com/wp-content/uploads/2020/06/bWFpbi9uZXdzL3BhcmtpbnNvbl8xMDgweDQwMHB4LmpwZWc-w1080h400fitcrops7704bd663ae091fee0ba3346041abdea.jpeg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Management and Treatment</h2>
+          <p class="card_text">There is no cure for Parkinson’s disease. However, medications and other treatments can help relieve some of your symptoms. Exercise can help your Parkinson’s symptoms significantly. In addition, physical therapy, occupational therapy and speech-language therapy can help with walking and balance problems, eating and swallowing challenges and speech problems.Green tea is also related to a reduced risk of developing Parkinson's disease.Medications are the main treatment method for patients with Parkinson’s disease.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+ <div align="center">
+     <form method="GET" action="/Test" >
+  <button type="button"  class="btn btn-warning hell" aria-haspopup="true" aria-expanded="false"
+          style="width:50%"  ><font size="4"> <a href="/dashboard/spiral">
+             spiral Test</a></font>
+  </button>
+         <button type="button"  class="btn btn-warning hell" aria-haspopup="true" aria-expanded="false"
+          style="width:50%" ><font size="4"><a href="/dashboard/wave">
+             wave Test</a></font>
+  </button>
+     </form>
+     <form method="GET" action="{{url_for('dashboard')}}" >
+  <button type="submit" class="btn btn-success"    aria-haspopup="true" aria-expanded="false"
+          style="width:50%"><font size="4">View Report</font>
+  </button>
+         </form>
+</div>
+</div>
+</body>
+</html>
